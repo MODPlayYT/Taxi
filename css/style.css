@@ -192,19 +192,6 @@ h6 {
   border-radius: 50px;
 }
 
-.header__phone:hover {
-  background-color: #000;
-  color: #FFF71A;
-}
-
-.no-webp .header__phone:hover::before{
-  background: url(../img/phone-hover.png) no-repeat left/cover; }
-
-.header__phone:hover::before {
-  content: "";
-  background-color: #FFF71A;
-}
-
 .header__phone a {
   display: block;
   padding: 40px 0;
@@ -236,6 +223,19 @@ h6 {
 }
 
 @media (min-width: 47.99875em) {
+  .header__phone:hover {
+    background-color: #000;
+    color: #FFF71A;
+  }
+
+  .no-webp .header__phone:hover::before{
+    background: url(../img/phone-hover.png) no-repeat left/cover; }
+
+  .header__phone:hover::before {
+    content: "";
+    background-color: #FFF71A;
+  }
+
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -415,4 +415,7 @@ h6 {
 
 .webp .header__phone::before{ background: url(../img/phone.webp) no-repeat left/cover; }
 
-.webp .header__phone:hover::before{ background: url(../img/phone-hover.webp) no-repeat left/cover; }
+@media (min-width: 47.99875em){
+
+  .webp .header__phone:hover::before{ background: url(../img/phone-hover.webp) no-repeat left/cover; }
+}
