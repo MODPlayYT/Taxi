@@ -182,7 +182,7 @@ h6 {
 }
 
 .no-webp .header__phone::before{
-  background: url(../img/phone.png) no-repeat left/cover; }
+  background: url("../img/phone.png") no-repeat left/cover; }
 
 .header__phone::before {
   content: "";
@@ -198,7 +198,7 @@ h6 {
 }
 
 .no-webp .header__phone:hover::before{
-  background: url(../img/phone-hover.png) no-repeat left/cover; }
+  background: url("../img/phone-hover.png") no-repeat left/cover; }
 
 .header__phone:hover::before {
   content: "";
