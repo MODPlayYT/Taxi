@@ -238,7 +238,7 @@ h6 {
 }
 
 .order__title {
-  font-size: 40px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -248,7 +248,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .order__btn {
@@ -286,6 +286,14 @@ h6 {
   .menu__item:hover {
     background-color: #000;
     color: #FFF71A;
+  }
+
+  .order__title {
+    font-size: 40px;
+  }
+
+  .order__descriprtion {
+    font-size: 25px;
   }
 
   .order__btn:hover {
