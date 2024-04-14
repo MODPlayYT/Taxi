@@ -229,7 +229,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 150px 0;
+  padding: 50px 0;
   height: 100%;
   text-align: center;
   -webkit-box-align: center;
@@ -286,6 +286,10 @@ h6 {
   .menu__item:hover {
     background-color: #000;
     color: #FFF71A;
+  }
+
+  .section__order {
+    padding: 150px 0;
   }
 
   .order__title {
