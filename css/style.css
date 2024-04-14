@@ -156,8 +156,8 @@ h6 {
 }
 
 .header__logo {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
 }
 
 .header__menu {
@@ -264,6 +264,11 @@ h6 {
 }
 
 @media (min-width: 47.99875em) {
+  .header__logo {
+    width: 55px;
+    height: 55px;
+  }
+
   .header__phone:hover {
     background-color: #000;
     color: #FFF71A;
