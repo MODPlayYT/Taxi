@@ -273,7 +273,7 @@ h6 {
   background-color: #FFF71A;
   font-size: 20px;
   border-radius: 50px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-weight: 700;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -285,28 +285,10 @@ h6 {
     height: 55px;
   }
 
-  .header__phone:hover {
-    background-color: #000;
-    color: #FFF71A;
-  }
-
-  .no-webp .header__phone:hover::before{
-    background: url(../img/phone-hover.png) no-repeat left/cover; }
-
-  .header__phone:hover::before {
-    content: "";
-    background-color: #FFF71A;
-  }
-
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .menu__item:hover {
-    background-color: #000;
-    color: #FFF71A;
   }
 
   .section__order {
@@ -320,11 +302,31 @@ h6 {
   .order__descriprtion {
     font-size: 25px;
   }
+}
+
+@media (min-width: 61.99875em) {
+  .header__phone:hover {
+    background-color: #000;
+    color: #FFF71A;
+  }
+
+  .no-webp .header__phone:hover::before{
+    background: url(../img/phone-hover.png) no-repeat left/cover; }
+
+  .header__phone:hover::before {
+    content: "";
+    background-color: #FFF71A;
+  }
+
+  .menu__item:hover {
+    background-color: #000;
+    color: #FFF71A;
+  }
 
   .order__btn:hover {
     background-color: #000;
     color: #FFF71A;
-    border: 1px solid #FFF71A;
+    border: 2px solid #FFF71A;
   }
 }
 
@@ -338,16 +340,16 @@ h6 {
   [class*=__container] {
     max-width: 46.875rem;
   }
+
+  .header {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 47.99875em) {
   [class*=__container] {
     max-width: none;
     padding: 0 0.9375rem;
-  }
-
-  .header {
-    font-size: 18px;
   }
 
   .header__container a {
@@ -367,6 +369,15 @@ h6 {
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
     top: 0;
@@ -374,7 +385,6 @@ h6 {
     overflow: auto;
     padding: 60px 10px 30px 10px;
     background: rgba(0, 0, 0, 0.7);
-    color: #FFF71A;
   }
 
   .menu-open .menu__body {
@@ -385,7 +395,6 @@ h6 {
 
   .menu__item {
     font-size: 20px;
-    display: block;
     color: #FFF71A;
     text-align: center;
     border: 1px solid #FFF71A;
@@ -435,6 +444,7 @@ h6 {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
+    background-color: #FFF71A;
   }
 
   .menu-open .icon-menu::after {
@@ -442,6 +452,7 @@ h6 {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
+    background-color: #FFF71A;
   }
 
   .icon-menu {
@@ -501,7 +512,7 @@ h6 {
 
 .webp .section__order{ background: linear-gradient(57.79deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.59) 27.19% 81.02%), url(../img/order-background.webp) no-repeat top/cover; }
 
-@media (min-width: 47.99875em){
+@media (min-width: 61.99875em){
 
   .webp .header__phone:hover::before{ background: url(../img/phone-hover.webp) no-repeat left/cover; }
 }
