@@ -363,9 +363,6 @@ h6 {
     color: #FFF71A;
   }
 
-  .no-webp .header__phone:hover::before{
-    background: url(../img/phone-hover.png) no-repeat left/cover; }
-
   .header__phone:hover::before {
     content: "";
     background-color: #FFF71A;
@@ -566,8 +563,3 @@ h6 {
 .webp .section__order{ background: linear-gradient(57.79deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.59) 27.19% 81.02%), url(../img/order-background.webp) no-repeat top/cover; }
 
 .webp .about__item::before{ background: url(../img/check-mark.webp) no-repeat left/cover; }
-
-@media (min-width: 61.99875em){
-
-  .webp .header__phone:hover::before{ background: url(../img/phone-hover.webp) no-repeat left/cover; }
-}
