@@ -358,17 +358,16 @@ h6 {
 }
 
 @media (min-width: 61.99875em) {
-  .header__phone:hover {
-    background-color: #000;
-    color: #FFF71A;
-  }
-
-  .no-webp .header__phone:hover::before{
+  .no-webp .header__phone::before{
     background: url(../img/phone-hover.png) no-repeat left/cover; }
-
-  .header__phone:hover::before {
+  .header__phone::before {
     content: "";
     background-color: #FFF71A;
+  }
+
+  .header__phone::before:hover {
+    background-color: #000;
+    color: #FFF71A;
   }
 
   .menu__item:hover {
@@ -569,5 +568,5 @@ h6 {
 
 @media (min-width: 61.99875em){
 
-  .webp .header__phone:hover::before{ background: url(../img/phone-hover.webp) no-repeat left/cover; }
+  .webp .header__phone::before{ background: url(../img/phone-hover.webp) no-repeat left/cover; }
 }
