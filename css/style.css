@@ -189,7 +189,6 @@ h6 {
   margin: 0 15px 0 0;
   width: 25px;
   height: 25px;
-  border-radius: 50px;
 }
 
 .header__phone a {
@@ -368,6 +367,7 @@ h6 {
   .header__phone::before:hover {
     background-color: #000;
     color: #FFF71A;
+    border-radius: 50px;
   }
 
   .menu__item:hover {
