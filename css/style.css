@@ -181,17 +181,6 @@ h6 {
   padding: 0 16px;
 }
 
-.no-webp .header__phone::before{
-  background: url(../img/phone.png) no-repeat left/cover; }
-
-.header__phone::before {
-  content: "";
-  margin: 0 15px 0 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 50px;
-}
-
 .header__phone a {
   display: block;
   padding: 40px 0;
@@ -366,6 +355,17 @@ h6 {
   .header__phone:hover::before {
     content: "";
     background-color: #FFF71A;
+  }
+
+  .no-webp .header__phone::before{
+    background: url(../img/phone.png) no-repeat left/cover; }
+
+  .header__phone::before {
+    content: "";
+    margin: 0 15px 0 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
   }
 
   .menu__item:hover {
@@ -558,8 +558,11 @@ h6 {
   }
 }
 
-.webp .header__phone::before{ background: url(../img/phone.webp) no-repeat left/cover; }
-
 .webp .section__order{ background: linear-gradient(57.79deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.59) 27.19% 81.02%), url(../img/order-background.webp) no-repeat top/cover; }
 
 .webp .about__item::before{ background: url(../img/check-mark.webp) no-repeat left/cover; }
+
+@media (min-width: 61.99875em){
+
+  .webp .header__phone::before{ background: url(../img/phone.webp) no-repeat left/cover; }
+}
