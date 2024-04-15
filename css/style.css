@@ -279,6 +279,53 @@ h6 {
   transition: all 0.3s ease-out;
 }
 
+.section__about {
+  background-color: #FFF71A;
+  padding: 55px 0;
+}
+
+.about {
+  text-align: center;
+}
+
+.about__title {
+  font-size: 50px;
+}
+
+.about__description {
+  margin: 25px 0;
+  font-size: 25px;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: start;
+  margin: 20px 0;
+}
+
+.about__item {
+  margin: 20px 10px 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.no-webp .about__item::before{
+  background: url(../img/check-mark.png) no-repeat left/cover; }
+
+.about__item::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  left: 0;
+}
+
 @media (min-width: 47.99875em) {
   .header__logo {
     width: 55px;
@@ -301,6 +348,12 @@ h6 {
 
   .order__descriprtion {
     font-size: 25px;
+  }
+
+  .about__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -511,6 +564,8 @@ h6 {
 .webp .header__phone::before{ background: url(../img/phone.webp) no-repeat left/cover; }
 
 .webp .section__order{ background: linear-gradient(57.79deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.59) 27.19% 81.02%), url(../img/order-background.webp) no-repeat top/cover; }
+
+.webp .about__item::before{ background: url(../img/check-mark.webp) no-repeat left/cover; }
 
 @media (min-width: 61.99875em){
 
